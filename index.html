@@ -4,27 +4,40 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <p>this is a practice</p>
-  <h3>First Try!
+  <h3>First Try!</h3>
     <p>在別人的遠端創建dev</p>
-    <p>創建新分支git checkout -b 新分支名<small>但這是舊方法的樣子</small></p>
-    <p>git switch -c dev <span>#創建並且切換到dev</span></p>
+    <p>創建新分支git checkout -b 新分支名<small style="color: skyblue;">但這是舊方法的樣子</small></p>
+    <p>git switch -c dev #創建並且切換到dev</p>
     <p>不像checkout -b還同時有創建的意思</p>
-  </h3>
+
   <div>
     <span>補充說明</span>
-    <img src="./src/醜merge.jpg" alt="">
+    <div>
+          <img src="./src/醜merge.jpg" alt="">
+    </div>
   </div>
   <h3>Try 2!</h3>
   <p>可以不需要再開一個自己的repo作業，因為已經在對方的分支上有自己的進度了</p>
-  <p>想要自己操作給自己看不給別人看的話</p>
+  <p>想要自己操作給自己看不給別人看的話：</p>
   <pre><code>git remote add 取新的貼紙名</code></pre>
-  <span>因為剛剛clone別人所以你的origin被用走了！</span>
-  <p>之後再改個push指令確保我們都是在自己的repo上作業</p>
+  <p>因為剛剛clone別人所以你的origin被用走了！
+    之後再改個push指令確保我們都是在自己的repo上作業
+  </p>
   <pre><code>git push -u myrepo dev</code></pre>
-  <h2>萬萬記得在推以前都要先fetch 一下對方 確保是最新進度，</h2>
-  <p>神仙指令拯救迷途小羊<pre><code>git branch -vv</code></pre></p>
+  <h3>萬萬記得在推以前都要先fetch 一下對方 確保是最新進度</h3>
+  <pre>神仙指令拯救迷途小羊 <code>git branch -vv</code></pre>
+  <h3>Try 3!</h3>
+  <p>不merge改rebase</p>
+  <p>還是要先記得先fetch遠端的最新資料抓取但不合併
+    這樣做可以同步到本地但不會改動？！
+    <span style="color: brown;">你在什麼分支，就關心同名的遠端分支</span>
+  </p>
+  <p>把git rebase 想成我不要自己是岔出去的線，
+    我要把我岔出去的東東接到原本你後面才漂亮</p>
+  <p>'你正在操作的分支' git rebase 'origin/dev' 有夠卡這裡為啥是對應這個分支啦==???</p>
 </body>
 </html>

@@ -1,0 +1,20 @@
+code {
+  color: darkkhaki;
+  font-weight: 700;
+}
+
+img {
+  width: 50%;
+  margin-block: 18px;
+}
+
+h3 {
+  color: midnightblue;
+  text-decoration: underline double blueviolet 1px;
+  font-size: 1.5rem;
+
+}
+
+p {
+  color: #878787;
+}
