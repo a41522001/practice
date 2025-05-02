@@ -46,24 +46,6 @@
   </div>
   <p>我剛剛去處理main沒有對齊遠端main的問題，使用了<pre><code>git reset --hard origin/main
   </code></pre></p>
-  <h3>萬萬記得在推以前都要先fetch 一下對方 確保是最新進度</h3>
-  <pre>神仙指令拯救迷途小羊 <code>git branch -vv</code></pre>
-  <h3>Try 3!</h3>
-  <p>不merge改rebase</p>
-  <p>還是要先記得先fetch遠端的最新資料抓取但不合併
-    這樣做可以同步到本地但不會改動？！
-    <span style="color: brown;">你在什麼分支，就關心同名的遠端分支</span>
-  </p>
-  <p>把git rebase 想成我不要自己是岔出去的線，
-    我要把我岔出去的東東接到原本你後面才漂亮</p>
-  <p>'你正在操作的分支' git rebase 'origin/dev' 有夠卡這裡為啥是對應這個分支啦==???</p>
-  <p>注意！！！之後都要在對方的分支上工作開發功能</p>
-  <p>所以每次開始寫前都要對齊！</p>
-  <div>
-    <img src="./src/注意.png" alt="">
-  </div>
-  <p>我剛剛去處理main沒有對齊遠端main的問題，使用了<pre><code>git reset --hard origin/main
-  </code></pre></p>
   <h3>怪死了</h3>
   <p>這樣子才是成功讓main merge dev 後的狀態</p>
   <div><img src="./src/after merge.png" alt=""></div>
@@ -71,5 +53,9 @@
   <p>導致一直重複push 一堆一樣的commit</p>
   <p>使用很兇的指令<pre><code>先回去我想去的地方 git reset --hard d54ea19b</code></pre></p>
   <pre><code>再推送這條 多餘的東西886 git push --force</code></pre>
+  <h3>Try 4! 再創建一個全新分支</h3>
+  <p>我叫 login-block</p>
+  <p>因為手賤又在遠端進行手動操作，會導致本地端落後遠端不同步</p>
+  <p>這時就要在main merge 新分支前，先自己pull 對齊遠端分支同步狀態！</p>
 </body>
 </html>
