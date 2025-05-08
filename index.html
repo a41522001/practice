@@ -63,6 +63,22 @@
   <h3>Try 6!</h3>
   <p>這是一次commit測試</p>
   <p>先把這個commit push出去再反悔</p>
+  <h3>Try 7!</h3>
+  <p>太棒了可以去任何想去的地方</p>
+  <p>
+    <code>git checkout -B '分支名' 想去的commitID(4碼)</code>
+    <code>git switch -c '分支名' 想去的commitID(4碼)</code>
+  </p>
+  <p><code>git reset 4碼 --hard</code>這是強制退回去該地方</p>
+  <p>你的本端到了，可是你也需要修正遠端的位置，因此需要[覆蓋歷史紀錄]
+    <code>git push origin demo --force</code>
+    這樣就能把目前本地端的狀況覆蓋遠端了
+  </p>
+  <h3>補充說明： cherry-pick</h3>
+  <p>複製你想要的節點，可以多選節點，組成一段新的樹枝，把這截樹枝接過去</p>
+  <p><code>git cherry-pick ce75 f882 146d</code>
+  順序-由舊至新的點點</p>
+  
 
 
 </body>
